@@ -62,24 +62,61 @@
 
 // Использование меток во вложенных циклах
 
-first: for (let i = 0; i < 3; i++) {
-    console.log(`First level: ${i}`);
-    for (let j = 0; j < 3; j++) {
-        console.log(`Second level: ${j}`);
-        for (let k = 0; k < 3; k++) {
-            if (k === 2) continue first;
-            console.log(`Third level: ${k}`);
-        }
-    }
+// first: for (let i = 0; i < 3; i++) {
+//     console.log(`First level: ${i}`);
+//     for (let j = 0; j < 3; j++) {
+//         console.log(`Second level: ${j}`);
+//         for (let k = 0; k < 3; k++) {
+//             if (k === 2) continue first;
+//             console.log(`Third level: ${k}`);
+//         }
+//     }
+// }
+
+// first: for (let i = 0; i < 3; i++) {
+//     console.log(`First level: ${i}`);
+//     for (let j = 0; j < 3; j++) {
+//         console.log(`Second level: ${j}`);
+//         for (let k = 0; k < 3; k++) {
+//             if (k === 2) break first;
+//             console.log(`Third level: ${k}`);
+//         }
+//     }
+// }
+
+function firstTask() {
+    
+    for (let i = 5; i <= 10; i++) {
+        console.log(i);
+    }        
 }
 
-first: for (let i = 0; i < 3; i++) {
-    console.log(`First level: ${i}`);
-    for (let j = 0; j < 3; j++) {
-        console.log(`Second level: ${j}`);
-        for (let k = 0; k < 3; k++) {
-            if (k === 2) break first;
-            console.log(`Third level: ${k}`);
-        }
+for (let i = 2; i <= 10; i += 2) {
+    console.log(i);
+}
+
+// выводит нечетные числа пропуская четные
+for (let i = 2; i <= 16; i++) {
+    if (i % 2 === 0) {
+        continue;
+    } else {
+        console.log(i);
     }
 }
+// то же самое только с использованием while - выводит нечетные числа пропуская четные
+let i = 2;
+while (i <= 16) {
+    if (i % 2 !== 0) {
+    console.log(i);
+    }
+    i++;
+}
+
+// заполняем массив числами от 5 до 10 включительно
+const arrayOfNumbers = [];
+
+for (let i = 5; i <= 10; i++) {
+    arrayOfNumbers.push(i);
+
+}
+console.log(arrayOfNumbers);
