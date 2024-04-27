@@ -84,39 +84,72 @@
 //     }
 // }
 
-function firstTask() {
+// function firstTask() {
     
-    for (let i = 5; i <= 10; i++) {
-        console.log(i);
-    }        
-}
+//     for (let i = 5; i <= 10; i++) {
+//         console.log(i);
+//     }        
+// }
 
-for (let i = 2; i <= 10; i += 2) {
-    console.log(i);
-}
+// for (let i = 2; i <= 10; i += 2) {
+//     console.log(i);
+// }
 
-// выводит нечетные числа пропуская четные
-for (let i = 2; i <= 16; i++) {
-    if (i % 2 === 0) {
-        continue;
-    } else {
-        console.log(i);
-    }
-}
-// то же самое только с использованием while - выводит нечетные числа пропуская четные
-let i = 2;
-while (i <= 16) {
-    if (i % 2 !== 0) {
-    console.log(i);
-    }
-    i++;
-}
+// // выводит нечетные числа пропуская четные
+// for (let i = 2; i <= 16; i++) {
+//     if (i % 2 === 0) {
+//         continue;
+//     } else {
+//         console.log(i);
+//     }
+// }
+// // то же самое только с использованием while - выводит нечетные числа пропуская четные
+// let i = 2;
+// while (i <= 16) {
+//     if (i % 2 !== 0) {
+//     console.log(i);
+//     }
+//     i++;
+// }
 
-// заполняем массив числами от 5 до 10 включительно
-const arrayOfNumbers = [];
+// // заполняем массив числами от 5 до 10 включительно
+// const arrayOfNumbers = [];
 
-for (let i = 5; i <= 10; i++) {
-    arrayOfNumbers.push(i);
+// for (let i = 5; i <= 10; i++) {
+//     arrayOfNumbers.push(i);
 
-}
-console.log(arrayOfNumbers);
+// }
+// console.log(arrayOfNumbers);
+
+// Продвинутые задания на циклы
+// Задание №1
+// const arr = [3, 5, 8, 16, 20, 23, 50];
+// const result = [];
+
+
+// for (let i = 0; i < arr.length; i++) {
+//     result[i] = arr[i];
+// }
+// console.log(result);
+
+// Задание №2
+// const data = [5, 10, 'Shopping', 20, 'Homework'];
+
+// for (let i = 0; i < data.length; i++) {
+//     if (typeof(data[i]) === 'string') {
+//         data[i] = data[i] + " - done";
+// } else {
+//     data[i] = data[i] * 2;    
+// }
+// }
+// console.log(data);
+
+// Задание №3
+// const data = [5, 10, 'Shopping', 20, 'Homework'];
+// const result = [];
+
+// for (let i = data.length - 1; i >= 0; i--) {
+//     result.push(data[i]);
+    
+// }
+// console.log(result);
