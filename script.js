@@ -153,3 +153,40 @@
     
 // }
 // console.log(result);
+
+
+// Нарисовать фигуру с помощью *
+
+//      *
+//     ***
+//    *****
+//   *******
+//  *********
+// ***********
+
+    // const lines = 5;
+    // let result = '';
+    
+    // for (let i = 0; i <= lines; i++) {
+    //     for (let j = 0; j < lines - i; j++) {
+    //         result += " ";
+    //     }
+    //     for (let j = 0; j < 2 * i + 1; j++) {
+    //         result += "*";
+    //     }
+    //     result += "\n";
+    // }
+    
+    // console.log(result)
+
+// А это решение выдал chatGPT
+
+// function drawFigure(height) {
+//     for (let i = 0; i < height; i++) {
+//     let spaces = ' '.repeat(height - i - 1);
+//     let stars = '*'.repeat(2 * i + 1);
+//     console.log(spaces + stars);
+//     }
+//     }
+    
+//     drawFigure(6);
